@@ -1,0 +1,15 @@
+def double_column(matrix, column_index):
+    for i in range(len(matrix)):
+        matrix[i][column_index] *= 2
+
+# Пример использования:
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+column_to_double = int(input("Введите индекс столбца для увеличения: "))
+double_column(matrix, column_to_double)
+for row in matrix:
+    print(row)
